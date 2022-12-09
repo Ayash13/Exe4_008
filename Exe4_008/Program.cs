@@ -54,6 +54,11 @@ namespace Exe4_008
         //method display
         public void Display()
         {
+            //condition if stack empty = show error
+            if (top == -1)
+            {
+                Console.WriteLine("Error: Stack is empty!");
+            }
             
         }
     }
