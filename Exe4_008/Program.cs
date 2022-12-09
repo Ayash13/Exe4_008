@@ -104,7 +104,7 @@ namespace Exe4_008
                         stack.Push(value);
                         break;
                     case 2:
-                        //function to pop choosen number
+                        //function to pop number
                         value = stack.Pop();
                         if (value != 0)
                         {
