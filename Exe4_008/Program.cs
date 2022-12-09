@@ -5,20 +5,23 @@ namespace Exe4_008
     class Stack
     {
         //create variable
-        private decimal[] ayash;
+        private string[] ayash;
         private int top;
         private int maxSize;
+        String s;
+        
 
         //method stack to save the size of array
         public Stack(int size)
         {
-            ayash = new decimal[size];
+            
+            ayash = new string[size];
             top = -1;
             maxSize = size;
         }
 
         //method push
-        public void Push(decimal value)
+        public void Push(string value)
         {
             //condition if push = maxsize show eror
             if (top == maxSize - 1)
@@ -34,18 +37,18 @@ namespace Exe4_008
         }
 
         //method pop
-        public decimal Pop()
+        public string Pop()
         {
             //condition if stack empty = show eror
             if (top == -1)
             {
                 Console.WriteLine("Error: Stack is empty!");
-                return 0;
+                return ("ss");
             }
             //else pop the number
             else
             {
-                decimal value = ayash[top];
+                string value = ayash[top];
                 top--;
                 return value;
             }
@@ -82,7 +85,8 @@ namespace Exe4_008
 
             //create var
             int choice;
-            decimal value;
+            string value;
+
 
             //create condition to choose menu
             do
@@ -100,16 +104,13 @@ namespace Exe4_008
                     case 1:
                         //function for push number to stack
                         Console.Write("Enter value to push: ");
-                        value = decimal.Parse(Console.ReadLine());
+                        value = Console.ReadLine();
                         stack.Push(value);
                         break;
                     case 2:
-                        //function to pop number
+                        //function to pop choosen number
                         value = stack.Pop();
-                        if (value != 0)
-                        {
-                            Console.WriteLine("Popped value: " + value);
-                        }
+                        Console.WriteLine("Popped value: " + value);
                         break;
                     case 3:
                         //to thisplay stack
