@@ -36,6 +36,12 @@ namespace Exe4_008
         //method pop
         public decimal Pop()
         {
+            //condition if stack empty = show eror
+            if (top == -1)
+            {
+                Console.WriteLine("Error: Stack is empty!");
+                return 0;
+            }
             
         }
 
