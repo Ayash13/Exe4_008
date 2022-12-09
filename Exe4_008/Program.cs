@@ -76,7 +76,13 @@ namespace Exe4_008
         //method main
         static void Main(string[] args)
         {
+            //instantiate Stack
+            //sizing array of stack
+            Stack stack = new Stack(27);
+
             
+
+           
         }
     }
 }
