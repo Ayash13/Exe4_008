@@ -71,5 +71,12 @@ namespace Exe4_008
         }
     }
 
-    
+    class Program
+    {
+        //method main
+        static void Main(string[] args)
+        {
+            
+        }
+    }
 }
