@@ -17,8 +17,16 @@ namespace Exe4_008
             maxSize = size;
         }
 
+        //method push
+        public void Push(decimal value)
+        {
+            
+        }
+
+        
+
        
     }
 
-    
+   
 }
