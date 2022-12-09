@@ -95,7 +95,32 @@ namespace Exe4_008
                 Console.Write("Enter your choice: ");
                 choice = int.Parse(Console.ReadLine());
 
-               
+                switch (choice)
+                {
+                    case 1:
+                        //function for push number to stack
+                        Console.Write("Enter value to push: ");
+                        value = decimal.Parse(Console.ReadLine());
+                        stack.Push(value);
+                        break;
+                    case 2:
+                        //function to pop choosen number
+                        value = stack.Pop();
+                        if (value != 0)
+                        {
+                            Console.WriteLine("Popped value: " + value);
+                        }
+                        break;
+                    case 3:
+                        //to thisplay stack
+                        stack.Display();
+                        break;
+                    case 4:
+                        break;
+                    default:
+                        Console.WriteLine("Error: Invalid choice!");
+                        break;
+                }
             }
             while (choice != 4);
         }
