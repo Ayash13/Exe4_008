@@ -20,6 +20,11 @@ namespace Exe4_008
         //method push
         public void Push(decimal value)
         {
+            //condition if push = maxsize show eror
+            if (top == maxSize - 1)
+            {
+                Console.WriteLine("Error: Stack is full!");
+            }
             
         }
 
