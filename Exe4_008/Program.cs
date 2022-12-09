@@ -33,10 +33,14 @@ namespace Exe4_008
             }
         }
 
-        
+        //method pop
+        public decimal Pop()
+        {
+            
+        }
 
        
     }
 
-   
+    
 }
