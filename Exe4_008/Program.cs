@@ -9,7 +9,16 @@ namespace Exe4_008
         private int top;
         private int maxSize;
 
-        
+        //method stack to save the size of array
+        public Stack(int size)
+        {
+            ayash = new decimal[size];
+            top = -1;
+            maxSize = size;
+        }
+
+       
     }
 
+    
 }
