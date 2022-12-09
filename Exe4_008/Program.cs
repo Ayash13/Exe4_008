@@ -25,7 +25,12 @@ namespace Exe4_008
             {
                 Console.WriteLine("Error: Stack is full!");
             }
-            
+            //elsee put the number to stack
+            else
+            {
+                top++;
+                ayash[top] = value;
+            }
         }
 
         
