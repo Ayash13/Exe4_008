@@ -80,7 +80,9 @@ namespace Exe4_008
             //sizing array of stack
             Stack stack = new Stack(27);
 
-            
+            //create var
+            int choice;
+            decimal value;
 
            
         }
