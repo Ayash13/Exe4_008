@@ -59,7 +59,15 @@ namespace Exe4_008
             {
                 Console.WriteLine("Error: Stack is empty!");
             }
-            
+            //else display stack
+            else
+            {
+                Console.WriteLine("Stack: ");
+                for (int i = top; i >= 0; i--)
+                {
+                    Console.WriteLine(ayash[i]);
+                }
+            }
         }
     }
 
