@@ -42,7 +42,13 @@ namespace Exe4_008
                 Console.WriteLine("Error: Stack is empty!");
                 return 0;
             }
-            
+            //else pop the number
+            else
+            {
+                decimal value = ayash[top];
+                top--;
+                return value;
+            }
         }
 
        
