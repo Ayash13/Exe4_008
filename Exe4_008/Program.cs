@@ -51,7 +51,11 @@ namespace Exe4_008
             }
         }
 
-       
+        //method display
+        public void Display()
+        {
+            
+        }
     }
 
     
